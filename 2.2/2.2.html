@@ -1,0 +1,26 @@
+<html>
+<body>
+<script >
+var fl = 0;
+function press(f,div) {
+     var D = document.getElementById(div);
+    if(fl == 0) 
+    {
+        f.but.value = "Show";
+        D.style.display = "block";
+        fl = 1;
+    } 
+    else 
+    {
+        f.but.value = "Hide";
+        D.style.display = "none";
+        fl = 0;
+    }
+}
+</script>
+<form>
+<input type=button name=but value="Show" onClick="press(this.form,'div')">
+</form>
+<div id="div" style=" display:none">some text</div>
+</body>
+</html>
